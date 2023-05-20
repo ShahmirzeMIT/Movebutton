@@ -5,8 +5,11 @@ const btn = document.querySelector('button');
 btn.addEventListener("mouseenter", change);
 
 function change(event){
-	if(checkMyInput()==false){
+	if(checkMyInput()==false ){
 		btn.classList.toggle('left');
+		if(btn.classList.contains("blue")){
+			btn.classList.remove('blue')
+		}
 	}
 	else{
 		btn.classList.add('blue')
