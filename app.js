@@ -6,9 +6,14 @@ btn.addEventListener("mouseenter", change);
 
 function change(event){
 	if(checkMyInput()==false ){
-		btn.classList.toggle('left');
+		if(!btn.classList.contains("right")){
+			btn.classList.toggle('left');
+		}
 		if(btn.classList.contains("blue")){
 			btn.classList.remove('blue')
+		}
+		if(!btn.classList.contains("left")){
+			btn.classList.toggle('right')
 		}
 	}
 	else{

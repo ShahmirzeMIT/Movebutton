@@ -34,11 +34,15 @@ button{
 	cursor: pointer;
 	background-color: #03a341;
 	color: white;
-	transition: all 1s margin-right;
+	transition: all 0.5s;
 }
 .left{
 	margin-left:200px ;
-	transition: 1s;
+	transition: 0.5s;
+}
+.right{
+	margin-right:150px ;
+	transition: 0.5s;
 }
 .blue{
 	background-color: #317ae8;
